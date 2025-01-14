@@ -3,7 +3,7 @@
 	"package": "com.wangyupu.mcmod.msrpp.mixin.client",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
-		"ExampleClientMixin"
+		"GUIKeybinding"
 	],
 	"injectors": {
 		"defaultRequire": 1

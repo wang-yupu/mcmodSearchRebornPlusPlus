@@ -2,16 +2,17 @@
 	"schemaVersion": 1,
 	"id": "msrpp",
 	"version": "${version}",
-	"name": "mcmodSearchRebornPlusPlus",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "MCMOD 搜索重置++",
+	"description": "...",
 	"authors": [
-		"Me!"
+		"wangyupu"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://wytl.cc/l/msrpp",
+		"sources": "https://github.com/wang-yupu/mcmodSearchRebornPlusPlus",
+		"issues": "https://github.com/wang-yupu/mcmodSearchRebornPlusPlus/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/msrpp/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,6 +21,9 @@
 		],
 		"client": [
 			"com.wangyupu.mcmod.msrpp.McmodSearchRebornPlusPlusClient"
+		],
+		"jei_mod_plugin": [
+			"com.wangyupu.mcmod.msrpp.utils.JEIUtils"
 		]
 	},
 	"mixins": [
@@ -33,9 +37,9 @@
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.20.4",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fabric-key-binding-api-v1": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
 	}
 }
