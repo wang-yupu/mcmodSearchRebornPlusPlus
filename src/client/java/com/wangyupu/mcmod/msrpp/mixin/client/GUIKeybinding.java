@@ -45,7 +45,7 @@ public abstract class GUIKeybinding {
                 } else {
                     if (FabricLoader.getInstance().isModLoaded("jei")){ // 获取 JEI 上聚焦的物品
                         try {
-                            ItemStack item = JEIUtils.getStackUnderMouse();
+                            ItemStack item = (ItemStack) JEIUtils.getStackUnderMouse();
                             if (item == null){return;}
                             searchItem.openMCMODForItem(item);
                         } catch (Exception exception1){

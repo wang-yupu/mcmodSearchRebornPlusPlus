@@ -7,7 +7,6 @@ import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.runtime.IJeiRuntime;
 import mezz.jei.api.constants.VanillaTypes;
 
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 import org.jetbrains.annotations.Nullable;
@@ -28,7 +27,7 @@ public class JEIUtils implements IModPlugin {
     }
 
     @Nullable
-    public static ItemStack getStackUnderMouse(){
+    public static Object getStackUnderMouse(){
         if (JEIRuntime == null) {
             McmodSearchRebornPlusPlusClient.LOGGER.error("JEI 运行时不存在");
             return null;
